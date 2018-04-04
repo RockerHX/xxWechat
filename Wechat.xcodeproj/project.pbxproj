@@ -1,0 +1,712 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C687B410207480CE0057D251 /* MethodTraceConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = C687B40F207480CE0057D251 /* MethodTraceConfig.plist */; };
+		C687B41A207480CE0057D251 /* libWechatDylib.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = C687B419207480CE0057D251 /* libWechatDylib.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		C687B41F207480CE0057D251 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C687B41E207480CE0057D251 /* JavaScriptCore.framework */; };
+		C687B421207480CE0057D251 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C687B420207480CE0057D251 /* Foundation.framework */; };
+		C687B423207480CE0057D251 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C687B422207480CE0057D251 /* UIKit.framework */; };
+		C687B428207480CE0057D251 /* WechatDylib.mm in Sources */ = {isa = PBXBuildFile; fileRef = C687B427207480CE0057D251 /* WechatDylib.mm */; };
+		C687B42B207480CE0057D251 /* LLDBTools.h in Headers */ = {isa = PBXBuildFile; fileRef = C687B42A207480CE0057D251 /* LLDBTools.h */; };
+		C687B42D207480CE0057D251 /* LLDBTools.mm in Sources */ = {isa = PBXBuildFile; fileRef = C687B42C207480CE0057D251 /* LLDBTools.mm */; };
+		C687B430207480CE0057D251 /* ANYMethodLog.h in Headers */ = {isa = PBXBuildFile; fileRef = C687B42F207480CE0057D251 /* ANYMethodLog.h */; };
+		C687B432207480CE0057D251 /* ANYMethodLog.m in Sources */ = {isa = PBXBuildFile; fileRef = C687B431207480CE0057D251 /* ANYMethodLog.m */; };
+		C687B434207480CE0057D251 /* MethodTrace.h in Headers */ = {isa = PBXBuildFile; fileRef = C687B433207480CE0057D251 /* MethodTrace.h */; };
+		C687B436207480CE0057D251 /* MethodTrace.m in Sources */ = {isa = PBXBuildFile; fileRef = C687B435207480CE0057D251 /* MethodTrace.m */; };
+		C687B43B207480CE0057D251 /* AntiAntiDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = C687B43A207480CE0057D251 /* AntiAntiDebug.m */; };
+		C687B43E207480CE0057D251 /* fishhook.c in Sources */ = {isa = PBXBuildFile; fileRef = C687B43D207480CE0057D251 /* fishhook.c */; };
+		C687B440207480CE0057D251 /* fishhook.h in Headers */ = {isa = PBXBuildFile; fileRef = C687B43F207480CE0057D251 /* fishhook.h */; };
+		C687B442207480CE0057D251 /* WechatDylib.h in Headers */ = {isa = PBXBuildFile; fileRef = C687B441207480CE0057D251 /* WechatDylib.h */; };
+		C687B444207480CE0057D251 /* WechatDylib.m in Sources */ = {isa = PBXBuildFile; fileRef = C687B443207480CE0057D251 /* WechatDylib.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C687B41B207480CE0057D251 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C687B3FC207480CE0057D251 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C687B418207480CE0057D251;
+			remoteInfo = WechatDylib;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C687B404207480CE0057D251 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				C687B41A207480CE0057D251 /* libWechatDylib.dylib in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		C687B407207480CE0057D251 /* Wechat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wechat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C687B40A207480CE0057D251 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		C687B40B207480CE0057D251 /* Target.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Target.plist; sourceTree = "<group>"; };
+		C687B40D207480CE0057D251 /* quick-resign.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = "quick-resign.sh"; path = "Scripts/quick-resign.sh"; sourceTree = "<group>"; };
+		C687B40F207480CE0057D251 /* MethodTraceConfig.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = MethodTraceConfig.plist; path = Config/MethodTraceConfig.plist; sourceTree = "<group>"; };
+		C687B412207480CE0057D251 /* put ipa or app here */ = {isa = PBXFileReference; lastKnownFileType = text; name = "put ipa or app here"; path = "TargetApp/put ipa or app here"; sourceTree = "<group>"; };
+		C687B413207480CE0057D251 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C687B419207480CE0057D251 /* libWechatDylib.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libWechatDylib.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		C687B41E207480CE0057D251 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		C687B420207480CE0057D251 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C687B422207480CE0057D251 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C687B426207480CE0057D251 /* WechatDylib.xm */ = {isa = PBXFileReference; lastKnownFileType = text; name = WechatDylib.xm; path = Logos/WechatDylib.xm; sourceTree = "<group>"; };
+		C687B427207480CE0057D251 /* WechatDylib.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = WechatDylib.mm; path = Logos/WechatDylib.mm; sourceTree = "<group>"; };
+		C687B42A207480CE0057D251 /* LLDBTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = LLDBTools.h; path = Tools/LLDBTools.h; sourceTree = "<group>"; };
+		C687B42C207480CE0057D251 /* LLDBTools.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = LLDBTools.mm; path = Tools/LLDBTools.mm; sourceTree = "<group>"; };
+		C687B42F207480CE0057D251 /* ANYMethodLog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ANYMethodLog.h; path = MethodTrace/ANYMethodLog.h; sourceTree = "<group>"; };
+		C687B431207480CE0057D251 /* ANYMethodLog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ANYMethodLog.m; path = MethodTrace/ANYMethodLog.m; sourceTree = "<group>"; };
+		C687B433207480CE0057D251 /* MethodTrace.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MethodTrace.h; path = MethodTrace/MethodTrace.h; sourceTree = "<group>"; };
+		C687B435207480CE0057D251 /* MethodTrace.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MethodTrace.m; path = MethodTrace/MethodTrace.m; sourceTree = "<group>"; };
+		C687B438207480CE0057D251 /* WechatDylib-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WechatDylib-Prefix.pch"; sourceTree = "<group>"; };
+		C687B43A207480CE0057D251 /* AntiAntiDebug.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AntiAntiDebug.m; path = AntiAntiDebug/AntiAntiDebug.m; sourceTree = "<group>"; };
+		C687B43D207480CE0057D251 /* fishhook.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = fishhook.c; path = fishhook/fishhook.c; sourceTree = "<group>"; };
+		C687B43F207480CE0057D251 /* fishhook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = fishhook.h; path = fishhook/fishhook.h; sourceTree = "<group>"; };
+		C687B441207480CE0057D251 /* WechatDylib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WechatDylib.h; sourceTree = "<group>"; };
+		C687B443207480CE0057D251 /* WechatDylib.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WechatDylib.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C687B401207480CE0057D251 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C687B416207480CE0057D251 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C687B41F207480CE0057D251 /* JavaScriptCore.framework in Frameworks */,
+				C687B423207480CE0057D251 /* UIKit.framework in Frameworks */,
+				C687B421207480CE0057D251 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C687B3FB207480CE0057D251 = {
+			isa = PBXGroup;
+			children = (
+				C687B409207480CE0057D251 /* Wechat */,
+				C687B424207480CE0057D251 /* WechatDylib */,
+				C687B41D207480CE0057D251 /* Frameworks */,
+				C687B408207480CE0057D251 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C687B408207480CE0057D251 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C687B407207480CE0057D251 /* Wechat.app */,
+				C687B419207480CE0057D251 /* libWechatDylib.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C687B409207480CE0057D251 /* Wechat */ = {
+			isa = PBXGroup;
+			children = (
+				C687B40A207480CE0057D251 /* icon.png */,
+				C687B40B207480CE0057D251 /* Target.plist */,
+				C687B413207480CE0057D251 /* Info.plist */,
+				C687B40C207480CE0057D251 /* Scripts */,
+				C687B40E207480CE0057D251 /* Config */,
+				C687B411207480CE0057D251 /* TargetApp */,
+			);
+			path = Wechat;
+			sourceTree = "<group>";
+		};
+		C687B40C207480CE0057D251 /* Scripts */ = {
+			isa = PBXGroup;
+			children = (
+				C687B40D207480CE0057D251 /* quick-resign.sh */,
+			);
+			name = Scripts;
+			sourceTree = "<group>";
+		};
+		C687B40E207480CE0057D251 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				C687B40F207480CE0057D251 /* MethodTraceConfig.plist */,
+			);
+			name = Config;
+			sourceTree = "<group>";
+		};
+		C687B411207480CE0057D251 /* TargetApp */ = {
+			isa = PBXGroup;
+			children = (
+				C687B412207480CE0057D251 /* put ipa or app here */,
+			);
+			name = TargetApp;
+			sourceTree = "<group>";
+		};
+		C687B41D207480CE0057D251 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C687B41E207480CE0057D251 /* JavaScriptCore.framework */,
+				C687B420207480CE0057D251 /* Foundation.framework */,
+				C687B422207480CE0057D251 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C687B424207480CE0057D251 /* WechatDylib */ = {
+			isa = PBXGroup;
+			children = (
+				C687B441207480CE0057D251 /* WechatDylib.h */,
+				C687B443207480CE0057D251 /* WechatDylib.m */,
+				C687B425207480CE0057D251 /* Logos */,
+				C687B429207480CE0057D251 /* Tools */,
+				C687B42E207480CE0057D251 /* MethodTrace */,
+				C687B439207480CE0057D251 /* AntiAntiDebug */,
+				C687B43C207480CE0057D251 /* fishhook */,
+				C687B437207480CE0057D251 /* Supporting Files */,
+			);
+			path = WechatDylib;
+			sourceTree = "<group>";
+		};
+		C687B425207480CE0057D251 /* Logos */ = {
+			isa = PBXGroup;
+			children = (
+				C687B426207480CE0057D251 /* WechatDylib.xm */,
+				C687B427207480CE0057D251 /* WechatDylib.mm */,
+			);
+			name = Logos;
+			sourceTree = "<group>";
+		};
+		C687B429207480CE0057D251 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				C687B42A207480CE0057D251 /* LLDBTools.h */,
+				C687B42C207480CE0057D251 /* LLDBTools.mm */,
+			);
+			name = Tools;
+			sourceTree = "<group>";
+		};
+		C687B42E207480CE0057D251 /* MethodTrace */ = {
+			isa = PBXGroup;
+			children = (
+				C687B42F207480CE0057D251 /* ANYMethodLog.h */,
+				C687B431207480CE0057D251 /* ANYMethodLog.m */,
+				C687B433207480CE0057D251 /* MethodTrace.h */,
+				C687B435207480CE0057D251 /* MethodTrace.m */,
+			);
+			name = MethodTrace;
+			sourceTree = "<group>";
+		};
+		C687B437207480CE0057D251 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C687B438207480CE0057D251 /* WechatDylib-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C687B439207480CE0057D251 /* AntiAntiDebug */ = {
+			isa = PBXGroup;
+			children = (
+				C687B43A207480CE0057D251 /* AntiAntiDebug.m */,
+			);
+			name = AntiAntiDebug;
+			sourceTree = "<group>";
+		};
+		C687B43C207480CE0057D251 /* fishhook */ = {
+			isa = PBXGroup;
+			children = (
+				C687B43D207480CE0057D251 /* fishhook.c */,
+				C687B43F207480CE0057D251 /* fishhook.h */,
+			);
+			name = fishhook;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		C687B417207480CE0057D251 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C687B42B207480CE0057D251 /* LLDBTools.h in Headers */,
+				C687B434207480CE0057D251 /* MethodTrace.h in Headers */,
+				C687B430207480CE0057D251 /* ANYMethodLog.h in Headers */,
+				C687B442207480CE0057D251 /* WechatDylib.h in Headers */,
+				C687B440207480CE0057D251 /* fishhook.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		C687B406207480CE0057D251 /* Wechat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C687B44A207480CE0057D251 /* Build configuration list for PBXNativeTarget "Wechat" */;
+			buildPhases = (
+				C687B400207480CE0057D251 /* Sources */,
+				C687B401207480CE0057D251 /* Frameworks */,
+				C687B402207480CE0057D251 /* ShellScript */,
+				C687B403207480CE0057D251 /* Resources */,
+				C687B404207480CE0057D251 /* CopyFiles */,
+				C687B405207480CE0057D251 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C687B41C207480CE0057D251 /* PBXTargetDependency */,
+			);
+			name = Wechat;
+			productName = Wechat;
+			productReference = C687B407207480CE0057D251 /* Wechat.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C687B418207480CE0057D251 /* WechatDylib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C687B447207480CE0057D251 /* Build configuration list for PBXNativeTarget "WechatDylib" */;
+			buildPhases = (
+				C687B414207480CE0057D251 /* ShellScript */,
+				C687B415207480CE0057D251 /* Sources */,
+				C687B416207480CE0057D251 /* Frameworks */,
+				C687B417207480CE0057D251 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WechatDylib;
+			productName = WechatDylib;
+			productReference = C687B419207480CE0057D251 /* libWechatDylib.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C687B3FC207480CE0057D251 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = RockerHX;
+				TargetAttributes = {
+					C687B406207480CE0057D251 = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					C687B418207480CE0057D251 = {
+						CreatedOnToolsVersion = 9.3;
+					};
+				};
+			};
+			buildConfigurationList = C687B3FF207480CE0057D251 /* Build configuration list for PBXProject "Wechat" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C687B3FB207480CE0057D251;
+			productRefGroup = C687B408207480CE0057D251 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C687B406207480CE0057D251 /* Wechat */,
+				C687B418207480CE0057D251 /* WechatDylib */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C687B403207480CE0057D251 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C687B410207480CE0057D251 /* MethodTraceConfig.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C687B402207480CE0057D251 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = /opt/MonkeyDev/Tools/pack.sh;
+		};
+		C687B405207480CE0057D251 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/MonkeyDev/Tools/pack.sh codesign";
+		};
+		C687B414207480CE0057D251 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/MonkeyDev/bin/md --xcbp-logos";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C687B400207480CE0057D251 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C687B415207480CE0057D251 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C687B444207480CE0057D251 /* WechatDylib.m in Sources */,
+				C687B436207480CE0057D251 /* MethodTrace.m in Sources */,
+				C687B43B207480CE0057D251 /* AntiAntiDebug.m in Sources */,
+				C687B428207480CE0057D251 /* WechatDylib.mm in Sources */,
+				C687B432207480CE0057D251 /* ANYMethodLog.m in Sources */,
+				C687B43E207480CE0057D251 /* fishhook.c in Sources */,
+				C687B42D207480CE0057D251 /* LLDBTools.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C687B41C207480CE0057D251 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C687B418207480CE0057D251 /* WechatDylib */;
+			targetProxy = C687B41B207480CE0057D251 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		C687B445207480CE0057D251 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C687B446207480CE0057D251 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C687B448207480CE0057D251 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				ENABLE_BITCODE = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks/**",
+					"$(MonkeyDevPath)/Librarys/**",
+					"$(MonkeyDevTheosPath)/vendor/lib",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WechatDylib/WechatDylib-Prefix.pch";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/include",
+					"$(MonkeyDevTheosPath)/vendor/include/**",
+				);
+				INSTALL_PATH = "@executable_path/Frameworks/libWechatDylib.dylib";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks",
+					"$(MonkeyDevTheosPath)/vendor/lib/**",
+				);
+				MonkeyDevPath = /opt/MonkeyDev;
+				MonkeyDevTheosPath = /opt/theos;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-DTHEOS_INSTANCE_NAME=\"\\\"WechatDylib\\\"\"",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-weak_library",
+					"/usr/lib/libc++.dylib",
+					"-weak_library",
+					"/usr/lib/libstdc++.dylib",
+					"-weak_library",
+					"$(MonkeyDevPath)/Frameworks/libsubstrate.dylib",
+					"-framework",
+					Cycript,
+					"-framework",
+					RevealServer,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+			};
+			name = Debug;
+		};
+		C687B449207480CE0057D251 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				ENABLE_BITCODE = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks/**",
+					"$(MonkeyDevPath)/Librarys/**",
+					"$(MonkeyDevTheosPath)/vendor/lib",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WechatDylib/WechatDylib-Prefix.pch";
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/include",
+					"$(MonkeyDevTheosPath)/vendor/include/**",
+				);
+				INSTALL_PATH = "@executable_path/Frameworks/libWechatDylib.dylib";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks",
+					"$(MonkeyDevTheosPath)/vendor/lib/**",
+				);
+				MonkeyDevPath = /opt/MonkeyDev;
+				MonkeyDevTheosPath = /opt/theos;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-DTHEOS_INSTANCE_NAME=\"\\\"WechatDylib\\\"\"",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-weak_library",
+					"/usr/lib/libc++.dylib",
+					"-weak_library",
+					"/usr/lib/libstdc++.dylib",
+					"-weak_library",
+					"$(MonkeyDevPath)/Frameworks/libsubstrate.dylib",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C687B44B207480CE0057D251 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = Wechat/Info.plist;
+				MONKEYDEV_ADD_SUBSTRATE = YES;
+				MONKEYDEV_CLASS_DUMP = NO;
+				MONKEYDEV_INSERT_DYLIB = YES;
+				MONKEYDEV_RESTORE_SYMBOL = NO;
+				MONKEYDEV_TARGET_APP = "___VARIABLE_TargetAppInfo___";
+				PODS_CONFIGURATION_BUILD_DIR = "$BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				PODS_ROOT = "${SRCROOT}/Pods";
+				PRODUCT_BUNDLE_IDENTIFIER = cc.caver.Wechat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C687B44C207480CE0057D251 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = Wechat/Info.plist;
+				MONKEYDEV_ADD_SUBSTRATE = YES;
+				MONKEYDEV_CLASS_DUMP = NO;
+				MONKEYDEV_INSERT_DYLIB = YES;
+				MONKEYDEV_RESTORE_SYMBOL = NO;
+				MONKEYDEV_TARGET_APP = "___VARIABLE_TargetAppInfo___";
+				PODS_CONFIGURATION_BUILD_DIR = "$BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				PODS_ROOT = "${SRCROOT}/Pods";
+				PRODUCT_BUNDLE_IDENTIFIER = cc.caver.Wechat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C687B3FF207480CE0057D251 /* Build configuration list for PBXProject "Wechat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C687B445207480CE0057D251 /* Debug */,
+				C687B446207480CE0057D251 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C687B447207480CE0057D251 /* Build configuration list for PBXNativeTarget "WechatDylib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C687B448207480CE0057D251 /* Debug */,
+				C687B449207480CE0057D251 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C687B44A207480CE0057D251 /* Build configuration list for PBXNativeTarget "Wechat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C687B44B207480CE0057D251 /* Debug */,
+				C687B44C207480CE0057D251 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C687B3FC207480CE0057D251 /* Project object */;
+}
