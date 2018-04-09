@@ -24,6 +24,7 @@
 		C687B440207480CE0057D251 /* fishhook.h in Headers */ = {isa = PBXBuildFile; fileRef = C687B43F207480CE0057D251 /* fishhook.h */; };
 		C687B442207480CE0057D251 /* WechatDylib.h in Headers */ = {isa = PBXBuildFile; fileRef = C687B441207480CE0057D251 /* WechatDylib.h */; };
 		C687B444207480CE0057D251 /* WechatDylib.m in Sources */ = {isa = PBXBuildFile; fileRef = C687B443207480CE0057D251 /* WechatDylib.m */; };
+		FE98B8C17DB0ABF672FC1219 /* Pods_WechatDylib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 622073F36D1E6C9603D6ABF4 /* Pods_WechatDylib.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		622073F36D1E6C9603D6ABF4 /* Pods_WechatDylib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WechatDylib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B79F59986FB20A1FF9C4F5F0 /* Pods-WechatDylib.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WechatDylib.release.xcconfig"; path = "Pods/Target Support Files/Pods-WechatDylib/Pods-WechatDylib.release.xcconfig"; sourceTree = "<group>"; };
 		C687B407207480CE0057D251 /* Wechat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wechat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C687B40A207480CE0057D251 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		C687B40B207480CE0057D251 /* Target.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Target.plist; sourceTree = "<group>"; };
@@ -75,6 +78,7 @@
 		C687B43F207480CE0057D251 /* fishhook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = fishhook.h; path = fishhook/fishhook.h; sourceTree = "<group>"; };
 		C687B441207480CE0057D251 /* WechatDylib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WechatDylib.h; sourceTree = "<group>"; };
 		C687B443207480CE0057D251 /* WechatDylib.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WechatDylib.m; sourceTree = "<group>"; };
+		EC83FCC802F1751279B541BF /* Pods-WechatDylib.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WechatDylib.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WechatDylib/Pods-WechatDylib.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,12 +96,22 @@
 				C687B41F207480CE0057D251 /* JavaScriptCore.framework in Frameworks */,
 				C687B423207480CE0057D251 /* UIKit.framework in Frameworks */,
 				C687B421207480CE0057D251 /* Foundation.framework in Frameworks */,
+				FE98B8C17DB0ABF672FC1219 /* Pods_WechatDylib.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7AB8307DCC4639EA4D1008FB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EC83FCC802F1751279B541BF /* Pods-WechatDylib.debug.xcconfig */,
+				B79F59986FB20A1FF9C4F5F0 /* Pods-WechatDylib.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		C687B3FB207480CE0057D251 = {
 			isa = PBXGroup;
 			children = (
@@ -105,6 +119,7 @@
 				C687B424207480CE0057D251 /* WechatDylib */,
 				C687B41D207480CE0057D251 /* Frameworks */,
 				C687B408207480CE0057D251 /* Products */,
+				7AB8307DCC4639EA4D1008FB /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -160,6 +175,7 @@
 				C687B41E207480CE0057D251 /* JavaScriptCore.framework */,
 				C687B420207480CE0057D251 /* Foundation.framework */,
 				C687B422207480CE0057D251 /* UIKit.framework */,
+				622073F36D1E6C9603D6ABF4 /* Pods_WechatDylib.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -276,6 +292,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C687B447207480CE0057D251 /* Build configuration list for PBXNativeTarget "WechatDylib" */;
 			buildPhases = (
+				B656F039824C60BA4770CBA4 /* [CP] Check Pods Manifest.lock */,
 				C687B414207480CE0057D251 /* ShellScript */,
 				C687B415207480CE0057D251 /* Sources */,
 				C687B416207480CE0057D251 /* Frameworks */,
@@ -337,6 +354,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		B656F039824C60BA4770CBA4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WechatDylib-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		C687B402207480CE0057D251 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -523,8 +558,10 @@
 		};
 		C687B448207480CE0057D251 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC83FCC802F1751279B541BF /* Pods-WechatDylib.debug.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = HG8SBJDJPT;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				ENABLE_BITCODE = NO;
@@ -547,6 +584,7 @@
 					"$(MonkeyDevPath)/include",
 					"$(MonkeyDevTheosPath)/vendor/include/**",
 				);
+				INFOPLIST_FILE = "$(SRCROOT)/Wechat/Info.plist";
 				INSTALL_PATH = "@executable_path/Frameworks/libWechatDylib.dylib";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -577,6 +615,7 @@
 					RevealServer,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = NO;
 			};
@@ -584,9 +623,11 @@
 		};
 		C687B449207480CE0057D251 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B79F59986FB20A1FF9C4F5F0 /* Pods-WechatDylib.release.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				COPY_PHASE_STRIP = YES;
+				DEVELOPMENT_TEAM = HG8SBJDJPT;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				ENABLE_BITCODE = NO;
@@ -608,6 +649,7 @@
 					"$(MonkeyDevPath)/include",
 					"$(MonkeyDevTheosPath)/vendor/include/**",
 				);
+				INFOPLIST_FILE = "$(SRCROOT)/Wechat/Info.plist";
 				INSTALL_PATH = "@executable_path/Frameworks/libWechatDylib.dylib";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -634,6 +676,7 @@
 					"$(MonkeyDevPath)/Frameworks/libsubstrate.dylib",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -641,7 +684,8 @@
 		C687B44B207480CE0057D251 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = HG8SBJDJPT;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = Wechat/Info.plist;
 				MONKEYDEV_ADD_SUBSTRATE = YES;
@@ -653,6 +697,8 @@
 				PODS_ROOT = "${SRCROOT}/Pods";
 				PRODUCT_BUNDLE_IDENTIFIER = cc.caver.Wechat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "655451b2-13bf-4b49-8f03-79a393e77aa5";
+				PROVISIONING_PROFILE_SPECIFIER = "Caver wildcard Development";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -660,7 +706,9 @@
 		C687B44C207480CE0057D251 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = HG8SBJDJPT;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = Wechat/Info.plist;
 				MONKEYDEV_ADD_SUBSTRATE = YES;
@@ -672,6 +720,8 @@
 				PODS_ROOT = "${SRCROOT}/Pods";
 				PRODUCT_BUNDLE_IDENTIFIER = cc.caver.Wechat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "706b825f-3209-463e-8656-efc6abec4fb4";
+				PROVISIONING_PROFILE_SPECIFIER = "Caver AC-Hoc";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

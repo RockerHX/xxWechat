@@ -1,0 +1,33 @@
+PODS:
+  - LKMessageSwitchPod (1.1.4)
+  - MakeRedEnvelopEasy (1.1.5)
+  - MDSettingCenter (1.1.0)
+  - WeChatMsgInterval (1.0.0)
+  - WechatPod (1.8.0):
+    - MDSettingCenter
+
+DEPENDENCIES:
+  - LKMessageSwitchPod
+  - MakeRedEnvelopEasy
+  - MDSettingCenter
+  - WeChatMsgInterval
+  - WechatPod
+
+SPEC REPOS:
+  https://github.com/AloneMonkey/MonkeyDevSpecs.git:
+    - LKMessageSwitchPod
+    - MakeRedEnvelopEasy
+    - MDSettingCenter
+    - WeChatMsgInterval
+    - WechatPod
+
+SPEC CHECKSUMS:
+  LKMessageSwitchPod: 8001c8a530f05e79fbccc7e532bcd6055b90ec27
+  MakeRedEnvelopEasy: 8c6b1bc923419470c43000e048fafef4fc4d2e5c
+  MDSettingCenter: 41b910206cd1d826e11247413cd48a068d38e274
+  WeChatMsgInterval: 00f4610434a985dd424f629264b3814a7554d421
+  WechatPod: b3731a4724d9b51469c3b59bcffc5fbb337f3fbb
+
+PODFILE CHECKSUM: 6b70a454ccefdb66b8ce0c14aee362347051f4b0
+
+COCOAPODS: 1.5.0.beta.1
